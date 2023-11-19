@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ? Main CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <!-- ? Custom CSS -->
+    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="css/nasra.css" />
+    <!-- ? Custom CSS -->
+    <!-- ? Main JavaScript -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <!-- ? Main JavaScript -->
+    <!-- ? Custom JavaScript -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap5.min.js"></script>
+    <!-- ? Custom JavaScript -->
+
+    <title>page</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- start hed  -->
+      <div class="sec-1">
+        <div class="counter_sec">
+          <div class="note">
+            <div class="cardachivement">
+              <img src="photo/icon/laptop-student-svgrepo-com.svg" alt="" />
+              <p class="counter" data-target="80">1250</p>
+              <h4>عدد الطلاب</h4>
+            </div>
+          </div>
+          <div class="note">
+            <div class="cardachivement">
+              <img src="photo/icon/laptop-student-svgrepo-com.svg" alt="" />
+              <p class="counter" data-target="80">850</p>
+              <h4>طلاب الاساسي</h4>
+            </div>
+          </div>
+
+          <div class="note">
+            <div class="cardachivement">
+              <img src="photo/icon/laptop-student-svgrepo-com.svg" alt="" />
+              <p class="counter" data-target="80">400</p>
+              <h4>طلاب الجامعي</h4>
+            </div>
+          </div>
+          <div class="note">
+            <div class="cardachivement">
+              <img src="photo/icon/laptop-student-svgrepo-com.svg" alt="" />
+              <p class="counter" data-target="80">600</p>
+              <h4>الطلاب المشتركه</h4>
+            </div>
+          </div>
+          <div class="note">
+            <div class="cardachivement">
+              <img src="photo/icon/laptop-student-svgrepo-com.svg" alt="" />
+              <p class="counter" data-target="80">450</p>
+              <h4>الطلاب اونلاين</h4>
+            </div>
+          </div>
+        </div>
+        <div class="counter_sec-1">
+          <div class="note">
+            <div class="cardachivement">
+              <img src="photo/icon/laptop-student-svgrepo-com.svg" alt="" />
+              <p class="counter" data-target="80">150</p>
+              <h4>عدد المدرسين</h4>
+            </div>
+          </div>
+          <div class="note">
+            <div class="cardachivement">
+              <img src="photo/icon/laptop-student-svgrepo-com.svg" alt="" />
+              <p class="counter" data-target="80">90</p>
+              <h4>عدد الدكاتره</h4>
+            </div>
+          </div>
+          <div class="note">
+            <div class="cardachivement">
+              <img src="photo/icon/laptop-student-svgrepo-com.svg" alt="" />
+              <p class="counter" data-target="80">1120</p>
+              <h4>عدد المركز الاساسي</h4>
+            </div>
+          </div>
+          <div class="note">
+            <div class="cardachivement">
+              <img src="photo/icon/laptop-student-svgrepo-com.svg" alt="" />
+              <p class="counter" data-target="80">1350</p>
+              <h4>عدد المركز الجامعي</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end hed -->
+      <!-- mid -->
+      <div class="mid">
+        <h4 class="sh">بحث متقدم</h4>
+        <div class="deta-num">
+          <div class="form-group">
+            <label for="">تاريخ البدايه</label>
+            <input type="date" class="form-control" />
+            <label for="">تاريخ النهايه</label>
+            <input type="date" class="form-control" />
+          </div>
+        </div>
+        <div class="fliter">
+          <h4>فلتر</h4>
+        </div>
+      </div>
+      <!-- mid -->
+      <!-- tabls -->
+      <div class="sec-2">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-12">
+            <div class="heder-table">
+              <div class="hed">
+                <h4>احدث الكورسات<span>8</span></h4>
+              </div>
+              <div class="drop">
+                <div id="dete" class="deta-num" style="display: none">
+                  <div class="form-group">
+                    <label for="">تاريخ البدايه</label>
+                    <input type="date" class="form-control" />
+                    <label for="">تاريخ النهايه</label>
+                    <input type="date" class="form-control" />
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    اختار
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#" id="month">شهر </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" id="weeks">اسبوع</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" id="choose">CUSTOM</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">اسم الكورس</th>
+                    <th scope="col">المنصه</th>
+                    <th scope="col">الكليه</th>
+                    <th scope="col">القسم</th>
+                    <th scope="col">الفرقه</th>
+                    <th scope="col">اسم الدكتور</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td scope="row">1</td>
+                    <td>اقتصاد</td>
+                    <td>azcourses</td>
+                    <td>تجاره</td>
+                    <td>عربي</td>
+                    <td>اولي</td>
+                    <td>محمد أحمد</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">2</td>
+                    <td>اقتصاد</td>
+                    <td>azcourses</td>
+                    <td>تجاره</td>
+                    <td>عربي</td>
+                    <td>اولي</td>
+                    <td>محمد أحمد</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">3</td>
+                    <td>اقتصاد</td>
+                    <td>azcourses</td>
+                    <td>تجاره</td>
+                    <td>عربي</td>
+                    <td>اولي</td>
+                    <td>محمد أحمد</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">4</td>
+                    <td>اقتصاد</td>
+                    <td>azcourses</td>
+                    <td>تجاره</td>
+                    <td>عربي</td>
+                    <td>اولي</td>
+                    <td>محمد أحمد</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">5</td>
+                    <td>اقتصاد</td>
+                    <td>azcourses</td>
+                    <td>تجاره</td>
+                    <td>عربي</td>
+                    <td>اولي</td>
+                    <td>محمد أحمد</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-12">
+            <div class="heder-table">
+              <div class="hed">
+                <h4>احدث الكورسات<span>8</span></h4>
+              </div>
+              <div class="drop">
+                <div id="dete-1" class="deta-num" style="display: none">
+                  <div class="form-group">
+                    <label for="">تاريخ البدايه</label>
+                    <input type="date" class="form-control" />
+                    <label for="">تاريخ النهايه</label>
+                    <input type="date" class="form-control" />
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    اختار
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#" id="month-1">شهر </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" id="weeks-1">اسبوع</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" id="choose-1">CUSTOM</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">اسم الدوره التعليميه</th>
+                    <th scope="col">السنه</th>
+                    <th scope="col">المنصه</th>
+                    <th scope="col">اسم المدرس</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td scope="row">1</td>
+                    <td>دوره تعليميه 1</td>
+                    <td>اولي</td>
+                    <td>azcourses</td>
+                    <td>محمد احمد</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">2</td>
+                    <td>دوره تعليميه 1</td>
+                    <td>اولي</td>
+                    <td>azcourses</td>
+                    <td>محمد احمد</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">3</td>
+                    <td>دوره تعليميه 1</td>
+                    <td>اولي</td>
+                    <td>azcourses</td>
+                    <td>محمد احمد</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">4</td>
+                    <td>دوره تعليميه 1</td>
+                    <td>اولي</td>
+                    <td>azcourses</td>
+                    <td>محمد احمد</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">5</td>
+                    <td>دوره تعليميه 1</td>
+                    <td>اولي</td>
+                    <td>azcourses</td>
+                    <td>محمد احمد</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-12">
+            <div class="heder-table">
+              <div class="hed">
+                <h4>احدث الكورسات<span>8</span></h4>
+              </div>
+              <div class="drop">
+                <div id="dete-2" class="deta-num" style="display: none">
+                  <div class="form-group">
+                    <label for="">تاريخ البدايه</label>
+                    <input type="date" class="form-control" />
+                    <label for="">تاريخ النهايه</label>
+                    <input type="date" class="form-control" />
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    اختار
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#" id="month-2">شهر </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" id="weeks-2">اسبوع</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" id="choose-2">CUSTOM</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">اسم الطالب</th>
+                    <th scope="col">المنصه</th>
+                    <th scope="col">الكورس</th>
+                    <th scope="col">الكليه</th>
+                    <th scope="col">الفرقه</th>
+                    <th scope="col">نوع الاشتراك</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td scope="row">1</td>
+                    <td>محمد احمد</td>
+                    <td>AZcoruses</td>
+                    <td>محاسبه</td>
+                    <td>تجاره</td>
+                    <td>اولي</td>
+                    <td>اشتراك 1</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">2</td>
+                    <td>محمد احمد</td>
+                    <td>AZcoruses</td>
+                    <td>محاسبه</td>
+                    <td>تجاره</td>
+                    <td>اولي</td>
+                    <td>اشتراك 1</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">3</td>
+                    <td>محمد احمد</td>
+                    <td>AZcoruses</td>
+                    <td>محاسبه</td>
+                    <td>تجاره</td>
+                    <td>اولي</td>
+                    <td>اشتراك 1</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">4</td>
+                    <td>محمد احمد</td>
+                    <td>AZcoruses</td>
+                    <td>محاسبه</td>
+                    <td>تجاره</td>
+                    <td>اولي</td>
+                    <td>اشتراك 1</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">5</td>
+                    <td>محمد احمد</td>
+                    <td>AZcoruses</td>
+                    <td>محاسبه</td>
+                    <td>تجاره</td>
+                    <td>اولي</td>
+                    <td>اشتراك 1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-12">
+            <div class="heder-table">
+              <div class="hed">
+                <h4>احدث الكورسات<span>8</span></h4>
+              </div>
+              <div class="drop">
+                <div id="dete-3" class="deta-num" style="display: none">
+                  <div class="form-group">
+                    <label for="">تاريخ البدايه</label>
+                    <input type="date" class="form-control" />
+                    <label for="">تاريخ النهايه</label>
+                    <input type="date" class="form-control" />
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    اختار
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#" id="month-3">شهر </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" id="weeks-3">اسبوع</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" id="choose-3">CUSTOM</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">اسم الطالب</th>
+                    <th scope="col">المنصه</th>
+                    <th scope="col">السنه</th>
+                    <th scope="col">الدوره</th>
+                    <th scope="col">نوع الاشتراك</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td scope="row">1</td>
+                    <td>محمد احمد</td>
+                    <td>AZcoruses</td>
+                    <td>سنه 1</td>
+                    <td>دوره 1</td>
+                    <td>اشتراك 1</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">2</td>
+                    <td>محمد احمد</td>
+                    <td>AZcoruses</td>
+                    <td>سنه 1</td>
+                    <td>دوره 1</td>
+                    <td>اشتراك 1</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">3</td>
+                    <td>محمد احمد</td>
+                    <td>AZcoruses</td>
+                    <td>سنه 1</td>
+                    <td>دوره 1</td>
+                    <td>اشتراك 1</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">4</td>
+                    <td>محمد احمد</td>
+                    <td>AZcoruses</td>
+                    <td>سنه 1</td>
+                    <td>دوره 1</td>
+                    <td>اشتراك 1</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">5</td>
+                    <td>محمد احمد</td>
+                    <td>AZcoruses</td>
+                    <td>سنه 1</td>
+                    <td>دوره 1</td>
+                    <td>اشتراك 1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- tabls -->
+      <!-- chart -->
+      <div class="sec-3">
+        <div class="percentage_projects">
+          <div class="d-flex justify-content-between">
+            <h5 class="num">عدد الطلاب</h5>
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="pills-day-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-day"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-day"
+                  aria-selected="true"
+                >
+                  سنه
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-week-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-week"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-week"
+                  aria-selected="false"
+                >
+                  شهر
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-month-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-month"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-month"
+                  aria-selected="false"
+                >
+                  اسبوع
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-day"
+              role="tabpanel"
+              aria-labelledby="pills-day-tab"
+              tabindex="0"
+            >
+              <div class="chart-containers">
+                <canvas id="percentageProjectsDay"></canvas>
+                <script>
+                  var barChartDataProjectsDay = {
+                    labels: [
+                      "السبت",
+                      "الاحد",
+                      "الاثنين",
+                      "الثلاثاء",
+                      "الاربعاء",
+                      "الخميس",
+                      "الجمعه",
+                    ],
+                    datasets: [
+                      {
+                        type: "bar",
+                        label: "طالب اساسي",
+                        backgroundColor: "#89d2fc",
+                        borderColor: "#89d2fc",
+                        fill: true,
+                        borderWidth: 1,
+                        tension: 0.1,
+                        data: [10, 7, 5, 6, 9, 7, 8],
+                      },
+                      {
+                        type: "bar",
+                        label: "طالب جامعي",
+                        backgroundColor: "#cbcaca",
+                        borderColor: "#cbcaca",
+                        borderWidth: 1,
+                        tension: 0.1,
+                        data: [6, 9, 7, 5, 10, 9, 8],
+                      },
+                    ],
+                  };
+
+                  var chartOptionsProjectsDay = {
+                    responsive: true,
+                    legend: {
+                      position: "top",
+                    },
+                    title: {
+                      display: true,
+                      text: "Chart.js Bar Chart",
+                    },
+                  };
+                </script>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-week"
+              role="tabpanel"
+              aria-labelledby="pills-week-tab"
+              tabindex="0"
+            >
+              <div class="chart-containers">
+                <canvas id="percentageProjectsWeek"></canvas>
+                <script>
+                  var barChartDataProjectsWeek = {
+                    labels: [
+                      "السبت",
+                      "الاحد",
+                      "الاثنين",
+                      "الثلاثاء",
+                      "الاربعاء",
+                      "الخميس",
+                      "الجمعه",
+                    ],
+                    datasets: [
+                      {
+                        type: "bar",
+                        label: "طالب اساسي",
+                        backgroundColor: "#89d2fc",
+                        borderColor: "#89d2fc",
+                        fill: true,
+                        borderWidth: 1,
+                        tension: 0.1,
+                        data: [10, 7, 5, 6, 9, 7, 8],
+                      },
+                      {
+                        type: "bar",
+                        label: "طالب جامعي",
+                        backgroundColor: "#cbcaca",
+                        borderColor: "#cbcaca",
+                        borderWidth: 1,
+                        tension: 0.1,
+                        data: [6, 9, 7, 5, 10, 9, 8],
+                      },
+                    ],
+                  };
+
+                  var chartOptionsProjectsWeek = {
+                    responsive: true,
+                    legend: {
+                      position: "top",
+                    },
+                    title: {
+                      display: true,
+                      text: "Chart.js Bar Chart",
+                    },
+                  };
+                </script>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-month"
+              role="tabpanel"
+              aria-labelledby="pills-month-tab"
+              tabindex="0"
+            >
+              <div class="chart-containers">
+                <canvas id="percentageProjectsMonth"></canvas>
+                <script>
+                  var barChartDataProjectsMonth = {
+                    labels: [
+                      "السبت",
+                      "الاحد",
+                      "الاثنين",
+                      "الثلاثاء",
+                      "الاربعاء",
+                      "الخميس",
+                      "الجمعه",
+                    ],
+                    datasets: [
+                      {
+                        type: "bar",
+                        label: "طالب اساسي",
+                        backgroundColor: "#89d2fc",
+                        borderColor: "#89d2fc",
+                        fill: true,
+                        borderWidth: 1,
+                        tension: 0.1,
+                        data: [10, 7, 5, 6, 9, 7, 8],
+                      },
+                      {
+                        type: "bar",
+                        label: "طالب جامعي",
+                        backgroundColor: "#cbcaca",
+                        borderColor: "#cbcaca",
+                        borderWidth: 1,
+                        tension: 0.1,
+                        data: [6, 9, 7, 5, 10, 9, 8],
+                      },
+                    ],
+                  };
+
+                  var chartOptionsProjectsMonth = {
+                    responsive: true,
+                    legend: {
+                      position: "top",
+                    },
+                    title: {
+                      display: true,
+                      text: "Chart.js Bar Chart",
+                    },
+                  };
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- chart -->
+    </div>
+    <script>
+      let choose = document.getElementById("choose");
+      choose.onclick = function () {
+        document.getElementById("dete").style.display = "block";
+      };
+    </script>
+    <script>
+      let chooseOne = document.getElementById("choose-1");
+      chooseOne.onclick = function () {
+        document.getElementById("dete-1").style.display = "block";
+      };
+    </script>
+    <script>
+      let chooseTow = document.getElementById("choose-2");
+      chooseTow.onclick = function () {
+        document.getElementById("dete-2").style.display = "block";
+      };
+    </script>
+    <script>
+      let chooseThere = document.getElementById("choose-3");
+      chooseThere.onclick = function () {
+        document.getElementById("dete-3").style.display = "block";
+      };
+    </script>
+    <script>
+      let month = document.getElementById("month");
+      month.onclick = function () {
+        document.getElementById("dete").style.display = "none";
+      };
+    </script>
+    <script>
+      let monthOne = document.getElementById("month-1");
+      monthOne.onclick = function () {
+        document.getElementById("dete-1").style.display = "none";
+      };
+    </script>
+    <script>
+      let monthTwo = document.getElementById("month-2");
+      monthTwo.onclick = function () {
+        document.getElementById("dete-2").style.display = "none";
+      };
+    </script>
+    <script>
+      let monthThere = document.getElementById("month-3");
+      monthThere.onclick = function () {
+        document.getElementById("dete-3").style.display = "none";
+      };
+    </script>
+    <script>
+      let week = document.getElementById("weeks");
+      week.onclick = function () {
+        document.getElementById("dete").style.display = "none";
+      };
+    </script>
+    <script>
+      let weekOne = document.getElementById("weeks-1");
+      weekOne.onclick = function () {
+        document.getElementById("dete-1").style.display = "none";
+      };
+    </script>
+    <script>
+      let weekTwo = document.getElementById("weeks-2");
+      weekTwo.onclick = function () {
+        document.getElementById("dete-2").style.display = "none";
+      };
+    </script>
+    <script>
+      let weekThere = document.getElementById("weeks-3");
+      weekThere.onclick = function () {
+        document.getElementById("dete-3").style.display = "none";
+      };
+    </script>
+
+    <script>
+      var percentageProjectsDay = document
+        .getElementById("percentageProjectsDay")
+        .getContext("2d");
+      window.myBar = new Chart(percentageProjectsDay, {
+        data: barChartDataProjectsDay,
+        options: chartOptionsProjectsDay,
+      });
+      var percentageProjectsWeek = document
+        .getElementById("percentageProjectsWeek")
+        .getContext("2d");
+      window.myBar = new Chart(percentageProjectsWeek, {
+        data: barChartDataProjectsWeek,
+        options: chartOptionsProjectsWeek,
+      });
+      var percentageProjectsMonth = document
+        .getElementById("percentageProjectsMonth")
+        .getContext("2d");
+      window.myBar = new Chart(percentageProjectsMonth, {
+        data: barChartDataProjectsMonth,
+        options: chartOptionsProjectsMonth,
+      });
+    </script>
+    <!-- countr -->
+    <script src="js/counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script>
+      $(".counter").counterUp({
+        delay: 15,
+        time: 4000,
+      });
+    </script>
+    <!-- countr -->
+    <script src="js/nasra.js"></script>
+  </body>
+</html>

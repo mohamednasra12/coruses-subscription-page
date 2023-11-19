@@ -1,0 +1,232 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: unset !important;
+}
+h4 {
+  margin: unset !important;
+}
+@font-face {
+  font-family: "light";
+  src: url("../fonts/alfont_com_Somar-Light.otf");
+}
+
+@font-face {
+  font-family: "regular";
+  src: url("../fonts/alfont_com_Somar-Regular.otf");
+}
+
+@font-face {
+  font-family: "semibold";
+  src: url("../fonts/alfont_com_Somar-Medium.otf");
+}
+
+@font-face {
+  font-family: "bold";
+  src: url("../fonts/alfont_com_Somar-Bold.otf");
+}
+
+body {
+  scroll-behavior: smooth;
+  direction: rtl;
+}
+.counter_sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  margin-top: 15px;
+}
+.counter_sec-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  padding: 0.5rem 2rem;
+}
+
+.cardachivement {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.185);
+  border-radius: 8px;
+  padding: 1rem 1rem;
+}
+.cardachivement h4 {
+  font-size: 0.7rem;
+  font-family: "regular";
+}
+.cardachivement p {
+  font-family: bold;
+}
+
+.cardachivement img {
+  width: 10%;
+}
+.sec-2 {
+  margin-top: 2rem;
+}
+.heder-table {
+  margin-top: 0.9rem;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: SPACE-BETWEEN;
+  padding: 0rem 1.2rem;
+}
+.heder-table P {
+  font-family: "regular";
+  font-size: 0.7rem;
+  background-color: #89d2fc46;
+  padding: 0.4rem;
+  border-radius: 5px;
+}
+
+.heder-table span {
+  margin-inline-start: 16px;
+  background: #0037ff8a;
+  padding: 0.3rem 0.6rem;
+  border-radius: 66%;
+}
+.heder-table h4 {
+  font-family: bold;
+  font-size: 1rem;
+}
+.percentage_projects .nav-pills .nav-item .nav-link.active {
+  background-color: #89d2fc;
+  color: black;
+}
+.nav-pills .nav-link {
+  font-family: "regular";
+  color: #b0b9b9;
+  text-align: start;
+  padding: 0.5rem;
+  border-radius: 15px;
+}
+.num {
+  font-family: bold;
+}
+.form-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+label {
+  font-family: "regular";
+  width: 54%;
+}
+.mid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.185);
+  padding: 1rem;
+  border-radius: 12px;
+  margin-top: 12px;
+}
+.fliter {
+  background-color: rgb(233, 161, 255);
+  padding: 0.5rem 1rem;
+  border-radius: 26px;
+  color: white;
+}
+.fliter h4 {
+  font-family: "regular";
+  font-size: 0.9rem;
+}
+.table {
+  overflow-y: hidden;
+}
+.table th {
+  font-family: "regular";
+  background-color: #89d2fc46;
+  border-left: 1px solid #00000036;
+  border-right: 1px solid #00000036;
+  border-top: 1px solid #00000036;
+}
+.table td {
+  font-family: "regular";
+  border-left: 1px solid #00000036;
+  border-right: 1px solid #00000036;
+}
+h4.sh {
+  font-family: 'regular';
+}
+button.btn.btn-secondary.dropdown-toggle {
+  background-color: #89d2fc4d;
+  font-family: 'regular';
+  color: black;
+  border: unset !important;
+}
+.drop {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+a.dropdown-item {
+  font-family: 'regular';
+}
+@media (min-width: 1600px) and (max-width: 2600px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .counter_sec {
+    display: block;
+  }
+  .counter_sec-1 {
+    display: block;
+    padding: unset;
+  }
+  .mid {
+    display: block;
+  }
+  .note {
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .counter_sec {
+    display: block;
+  }
+  .counter_sec-1 {
+    display: block;
+    padding: unset;
+  }
+  .mid {
+    display: block;
+  }
+  .note {
+    margin-top: 10px;
+  }
+  .heder-table {
+    display: block;
+  }
+  .heder-table P {
+    width: fit-content;
+  }
+  .num {
+    font-size: 0.7rem;
+    margin-top: 10px;
+  }
+  .table th {
+    font-size: 0.7rem;
+  }
+  .table td {
+    font-size: 0.7rem;
+  }
+}
